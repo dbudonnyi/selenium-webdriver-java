@@ -1,0 +1,12 @@
+[0.003][INFO]:      ChromeDriver 26.0.1383.0 C:\HATSFramework\HATS\bin\chromedriver.exe
+[0.803][FINE]:      Initializing session with capabilities {
+   "browserName": "chrome",
+   "goog:chromeOptions": {
+      "args": [  ],
+      "extensions": [  ]
+   }
+}
+
+[0.804][INFO]:      Launching chrome: "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --disable-hang-monitor --disable-prompt-on-repost --dom-automation --full-memory-crash-report --no-default-browser-check --no-first-run --disable-background-networking --disable-sync --disable-translate --disable-web-resources --safebrowsing-disable-auto-update --safebrowsing-disable-download-protection --disable-client-side-phishing-detection --disable-component-update --disable-default-apps --enable-logging --log-level=1 --ignore-certificate-errors about:blank
+[30.810][SEVERE]:   Failed to initialize connection
+[30.810][INFO]:     Chrome shutdown
