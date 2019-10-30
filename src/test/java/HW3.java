@@ -21,12 +21,8 @@ public class HW3 {
     private static Wait wait;
 
     @BeforeClass
-    public static void setupClass() {
-        WebDriverManager.chromedriver().setup();
-    }
-
-    @BeforeClass
     public static void setup(){
+        WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
         wait = new WebDriverWait(driver, 10);
     }
