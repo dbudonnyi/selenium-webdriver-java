@@ -37,11 +37,10 @@ public class HW1 {
         String selectorDocs = "ul.docs > li.doc";
 
         for (int i = 0; i < driver.findElements(By.cssSelector(selectorApps)).size(); i++) {
-            List<WebElement> apps = driver.findElements(By.cssSelector(selectorApps));
-            apps.get(i).click();
+            driver.findElements(By.cssSelector(selectorApps)).get(i).click();
+            Assert.assertTrue(areElementsPresent(driver, By.cssSelector("div.panel-heading")));
             for (int j = 0; j < driver.findElements(By.cssSelector(selectorDocs)).size(); j++) {
-                List<WebElement> docs = driver.findElements(By.cssSelector(selectorDocs));
-                docs.get(j).click();
+                driver.findElements(By.cssSelector(selectorDocs)).get(j).click();
                 Assert.assertTrue(areElementsPresent(driver, By.cssSelector("div.panel-heading")));
             }
         }
